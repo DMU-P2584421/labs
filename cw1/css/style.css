@@ -10,6 +10,9 @@ a:visited {
 a:hover {
   color: #3e8096;
 } /*sets the text colour of the links for when the mouse is hovering on them. i set mine to a colour that matches the theme*/
+a:active {
+  colour: yellow;
+}
 .title {
   color: #FACC2E;
   width: 350px;
