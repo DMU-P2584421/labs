@@ -1,0 +1,100 @@
+body {
+  background-color: #242A38;
+} /* changes the background colour of the whole page to fit the desired theme*/
+a {
+  color: white;
+} /*sets the text colour of the links*/
+a:visited {
+  color: white;
+} /*sets the text colour of the links when they have been visited. i kept mine the same colour as i prefer it for the design*/
+a:hover {
+  color: #3e8096;
+} /*sets the text colour of the links for when the mouse is hovering on them. i set mine to a colour that matches the theme*/
+.title {
+  color: #FACC2E;
+  width: 350px;
+  border: 2px #FACC2E solid;
+  text-align: center;
+  background-image: url(../img/background.png);
+  background-color: #0B615E;
+  margin: auto;
+  font-family: copperplate; /* i chose this font and these colours and background, because it is the same font and colours as the title screen in the english version of the film, as well as a similar background. the background image is a frame from the film.*/
+  text-shadow: 2px 3px black;
+} /* done to give the title image background, centred on the page and with automatic margins so the title will be centred properly on every type of browser. i also gave the text a shadow so its more easily visible on the image */
+
+nav {
+  text-align: center;
+  width: 350px;
+  margin: auto; /* used to align the nav links section to the middle of the page. the use of a specific width and automatic margins makes sure the section fits well to whatever device the website is open on*/
+  color: #FACC2E; /*text colour*/
+  border: 2px #FACC2E dotted; /*creates a border around the section, dotted and 2px thick*/
+  background-image: url(../img/background.png); /*sets a background image for the section*/
+  background-color: #0B615E; /* a backup background colour for the section in case the image isnt supported*/
+  font-family: copperplate; /*sets font*/
+  text-shadow: 2px 3px black; /*gives the text a black shadow so its more easy to see on top of the background*/
+  margin-top: 10px;
+  margin-bottom: 18px; /* margins added on the top and bottom to keep this section seperated from the above and below sections*/
+}
+.desc {
+  color: #FACC2E;
+  width: 75%; /* i didnt like the way the Synopsis section looked when it fit to the whole page, so i set the width to 75%, meaning it will fit 75% of thr page on any device. I did this instead of just setting margins because i wanted the margins to be quite wide on desktop, which would look strange in a mobile format*/
+  text-align: justify; /* aligns the text so that both edges are aligned with the margins, and each line is the same width. I think this looks better than aligning to center or to the left etc. because i fits more nicely into the box of the section*/
+  margin: auto; /*makes it so the section is aligned to the center of the page on any device, as the margins will automatically change*/
+  font-family: helvetica; /*sets font*/
+  background-color: #1e2430; /*sets background colour to fit with the colour pallete of the page*/
+  padding: 7px; /* creates space around the text, inside of the box, which i think looks better than leaving the text to go all the way to the edge of the box, especially with a different background colour to the main body as a whole*/
+  padding-top: 0.5px; /* not sure why but setting the padding as 7px all the way round makes the top padding look really thick, so i set the top padding seperately*/
+}
+footer {
+  color: #FACC2E; /*text colour*/
+  border-top: 2px black dashed; /* i set a top border for the footer as i think it looks better more obviously seperated from the rest of the page*/
+  text-align: center; /*aligns text to centre*/
+  padding-top: 5px;
+  padding-bottom: 5px; /* these padding settings make the text sit more nicely in the middle of the footer*/
+  background-color: #071019; /*sets the background colour of the footer to a darker colour than the main body, for the same reason as adding the border*/
+}
+.vid {
+  text-align: center;/* despite saying text align, this aligns the whole contents of this container to the centre of the page, which is just the video*/
+  padding-bottom: 15px; /* had to add some padding to the bottom, otherwise the video just sat on the very bottom of the page instead of the middle of the box, which i think looked weird*/
+  background-image: url(../img/bg2.jpg); /*used the same background image as the title and nav sections, but a bigger version so it fit nicely to the area i wanted it to without it having to tile. I chose to have the whole width of this section be the background image, just becaus i think it looks nice.*/
+  margin-top: 30px; /* creates a more definite seperation between this element and the above element*/
+}
+.castname {
+  font-family: copperplate; /* sets font to match the title of the page*/
+  color: #FACC2E; /*sets text colour*/
+  text-align: center; /*aligns the text to the centre*/
+}
+
+.castimage {
+  width: auto;
+  text-align: center;
+}
+
+.casttext {
+  color: #FACC2E; /* text colour*/
+  font-family: helvetica;
+  text-align: justify;
+  width: auto;
+  background-color: #1e2430;
+  padding: 7px;
+}
+.row {
+margin: auto;
+width: 85%; /* sets the entire row (casttext & castimage) to 85% width of the device it is on.*/
+  display: flex; /* makes the section into a flexbox, so it sits nicely as a row with two different elements side by side, without having to float the elements*/
+  flex-direction: row; /* sets the flex box as a row*/
+}
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column;
+  } /* sets it so that when the screen is too small for the box to sit as a row without the image being too small and the text area being too slim, the flex direction becomes a column, meaning the image will sit above the text.*/
+}
+.sound {
+  color: #FACC2E;
+  text-shadow: 2px 3px black;
+  background-image: url(../img/bg2.jpg); /* set the same bg image as the video on the other page, beacuse i think it looks nice ! */
+  padding: 20px;
+  text-align: center;
+  font-family: copperplate;
+  margin-top: 20px;
+}
