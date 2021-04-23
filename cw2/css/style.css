@@ -105,13 +105,12 @@ body {
   background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-color: purple;
+    background-color: white;
 }
 @media (max-width: 800px) {
   body {
     margin: 0;
-	}
-}
+  }
   
 
 }
