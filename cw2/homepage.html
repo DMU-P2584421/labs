@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/style.css"> <!-- links the css stylesheet to the page-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--links thefont awesome stylesheet for the social media icons-->
+    <title>home</title>
+  </head>
+  <body>
+    <div class="row">
+    <div class="title">
+<h1><strong>THE JAPANESE HOUSE</strong></h1>
+</div>
+<div id="sidepanel" class="sidepanel">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> <!-- button for when the sidepanel is open to close it -->
+<a href="homepage.html"><strong>HOME</strong></a>
+  <a href="discography.html"><strong>DISCOGRAPHY</strong></a>
+  <a href="live.html"><strong>LIVE DATES</strong></a>
+</div>
+
+<button class="openbtn" onclick="openNav()"></button> <!-- button to open the side panel -->
+</div>
+
+<div class="logo">
+   <img style='max-width: 100%' src="img/tjhlogo.png" height="auto" alt="the japanese house logo">
+   </div>
+   <h2><strong>ABOUT</strong></h2>
+  <div class="about">
+    <p>Amber Mary Bain (born 13 July 1995), better known by her stage name The Japanese House, is an English indie pop musician from Buckinghamshire. Bain contributes vocals and plays guitar, synthesizer and keyboard for her music. <p> As a teenager, Bain decided to pursue a career in music, having been taught music from her father during childhood. She began writing music under the moniker the Japanese House in 2012, after being introduced to Matt Healy of the 1975, who offered to help produce her music under the label Dirty Hit. </p> <p> She first rose to prominence after the release of her first single, "Still", which was a critical success and premiered on BBC Radio 1 presented by Zane Lowe.</p>
+  </div>
+<div class="songquestion">
+<p><strong>What is your favourite song by The Japanese House?</strong></p>
+<form id="form" onsubmit="return false;" > <!-- the return false means that the form doesnt 'submit' so the page wont reload-->
+  <input type="text" name="song" id="song">
+  <input type="submit" onclick="songfunction()" class="button" value="submit"> <!-- on click the function to decide and print the response to the answer will start -->
+</form>
+<div class="answer">
+<p id="answer"></p></div> <!-- the element that will become the response to the answer once it is printed-->
+</div>
+<div class="latest">
+  <h2><strong>LATEST RELEASES</strong></h2>
+</div>
+<div class="vid">
+<h3><strong>Something Has To Change</strong></h3>
+<video style="max-width: 100%; margin: auto;" controls>
+<source src="video/somethinghastochange.mp4" type='video/mp4' />
+<source src="video/somethinghastochange.webm" type='video/webm' />
+<p>Your browser does not support the video element. Please click <a href='video/somethinghastochange.mp4'>here</a> to download an mp4 of the video.</p>
+</video>
+  <p>The latest music video released by the Japanese House, on September 27th, 2019. Directed by Nadira Amrani. Read more <a href="https://genius.com/The-japanese-house-something-has-to-change-lyrics">here</a>.</p>
+</div>
+<div class="latestsong">
+<h3><strong>Sharing Beds</strong></h3>
+<audio controls>
+  <source src="audio/sharingbeds.mp3" type='audio/mp3' />
+  <source src="audio/sharingbeds.wav" type='audio/wav' />
+  <p>Your browser does not support the audio element. Please click <a href='sounds/sharingbeds.mp3'>here</a> to download an mp3 of the audio.</p> <!-- fallback in case the browser doesnt support the audio format-->
+</audio>
+<p>This song is the first song in her most recent EP. Read more <a href="https://genius.com/The-japanese-house-sharing-beds-lyrics">here</a>.</p>
+</div>
+<div class="latestep">
+  <h3><strong>CHEWING COTTON WOOL EP</strong></h3>
+     <img class="image1" style='max-width: 80%' src="img/ccw.png" height="auto" alt="chewing cotton wool ep cover image">
+   <p>A four song EP, released on the 2nd October 2020.</p>
+   <p>available to stream on <a href="https://open.spotify.com/album/1OlByJ5jsP9Eklfp03Xn8z?si=S1BJ9UTCSX2y4L_NJzdS2g">spotify</a>, <a href="https://music.youtube.com/playlist?list=OLAK5uy_kx-BEyWXX5B60kVCfQXpZe3N6Mu9bHci4">youtube music</a>, and <a href="https://www.deezer.com/en/album/163504492?autoplay=true">deezer</a>.</p>
+</div>
+<div class="socials">
+  <h2><strong>SOCIAL MEDIA</strong></h2>
+<div class="socialicons">
+   <a href="https://www.facebook.com/Japanesehouse" class="fa fa-facebook"></a>
+  <a href="https://twitter.com/Japanesehouse?s=20" class="fa fa-twitter"></a>
+  <a href="https://www.youtube.com/channel/UCrLuCLvpoujXvKP8FpkCIJQ" class="fa fa-youtube"></a>
+  <a href="https://www.instagram.com/thejapanesehouse/" class="fa fa-instagram"></a>
+  </div>
+</div>
+<button onclick="backtotop()" id="topbutton" class="topbutton" >back to top</button> <!-- this button runs the function to take the user back to the top of the page. i added this so the user wouldnt have to scroll all the way back up to get to the menu, and i didnt want to make the menu and heading static to the top of the page becaus ei didnt like how it looked -->
+<footer><strong>P2584421<strong></footer>
+<script type="text/javascript">
+var aa = "face like thunder"; //each variable is a different song for whatever the respnse to the question may be //
+var ab = "still";
+var a = "clean";
+var b = "went to meet her (intro)";
+var c = "we talk all the time";
+var d = "you seemed so happy";
+var e = "follow my girl";
+var f = "lilo";
+var g = "everybody hates me";
+var h = "marika is sleeping";
+var i = "f a r a w a y";
+var j = "saw you in a dream";
+var k = "somebody you found";
+var l = "3/3";
+var m = "swim against the tide";
+var n = "leon";
+var o = "maybe you're the reason";
+var p = "landslide";
+var q = "count to nine";
+var r = "somethingfartoogoodtofeel";
+var s = "worms";
+var t = "wild";
+function songfunction() {
+  var input = document.getElementById("song").value;
+  if (input == aa || input == ab || input == a || input == b || input == c || input == d || input == e || input == f || input == g || input == h || input == i || input == j || input == k || input == l || input == m || input == n) {
+    document.getElementById("answer").innerHTML = "that one is good :)";
+} else if (input == o || input == p || input == q || input == r || input == s) {
+  document.getElementById("answer").innerHTML = "I really like that one too !";
+} else if (input == t) {
+  document.getElementById("answer").innerHTML = "thats my favourite too !!";
+} else {
+  document.getElementById("answer").innerHTML = "I dont know that one, is it possible that you've typed it wrong?";
+}
+//this function above is to print a specific response depending on the users answer. the function is basically: if input is ab or a or b etc. etc. print one response, if the input is o or p or q etc. print a different response, if the input is t print another different response, and if the input is none of those than it is likely it is spelt wrong or not a valid answer, so the script will print a response accordingly. //
+}
+function openNav() {
+  document.getElementById("sidepanel").style.width = "250px";
+}
+// this function above is the one that runs when the menu button is pressed, it will increase the width of the sidepanel from 0 to 250px to make it seem as if the panel is opening //
+function closeNav() {
+  document.getElementById("sidepanel").style.width = "0";
+}
+// this function above is for when the close button of the menu is pressed, decreasing the width of the menu panal from 250px to 0, to make it seem as if it is closing //
+mybutton = document.getElementById("topbutton");
+window.onscroll = function() {buttonshow()};
+function buttonshow() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// the function above makes it so the button to take the user back to the top of the page doesnt appear until the user has scrolled far enough down the page. //
+
+function backtotop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+// the function above is the one that runs when the back to top button is pressed, taking the user back to the top of the page //
+</script>
+  </body>
+</html>

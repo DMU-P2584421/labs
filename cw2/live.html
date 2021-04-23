@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body onLoad="tourAlert()">
+    <div class="row">
+    <div class="title">
+  <h1><strong>THE JAPANESE HOUSE</strong></h1>
+  </div>
+  <div id="sidepanel" class="sidepanel">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="homepage.html"><strong>HOME</strong></a>
+  <a href="discography.html"><strong>DISCOGRAPHY</strong></a>
+  <a href="live.html"><strong>LIVE DATES</strong></a>
+  </div>
+  <button class="openbtn" onclick="openNav()"></button>
+    </div>
+      <h1 class="pagetitle"><strong>LIVE DATES</strong></h1>
+<div id="alertfortour" class="popup">
+        <div class="inside">
+          <button id="alertclosebutton" onclick="hidealert()" class="closeBtn">X</button>
+          <h1><strong>LIVE DATES ON HOLD</strong></h1>
+          <p>
+            all future uk live dates, festival apprearances, and international shows are on hold due to national lockdown.
+          </p>
+          <p>this page displays past live dates. click <a href="https://www.bandsintown.com/a/11955994-the-japanese-house?affil_code=js_thejapanesehouse.co.uk&app_id=js_thejapanesehouse.co.uk&came_from=242&trigger=track&utm_campaign=track&utm_medium=web&utm_source=widget">here</a> to sign up to be notified when new dates are announced.</p>
+        </div>
+</div>
+<div class="tour">
+<h3><strong>MANCHESTER 18/11/19</strong></h3>
+<div class="row2">
+<img src="img/manchester.jpg" class="tourimg" alt="image of the O2 ritz manchester"/>
+<p class="tourtext"> something has to change tour. O2 Ritz Manchester, December 18th, 2019.</p>
+</div>
+<p>tickets no longer available.</p>
+</div>
+<div class="tour">
+<h3><strong>LONDON 17/11/19</strong></h3>
+<div class="row2">
+<img src="img/london.jpg" class="tourimg" alt="image of the electric brixton london"/>
+<p class="albumtext"> something has to change tour. Electric Brixton London, December 17th, 2019.</p>
+</div>
+<p>tickets no longer available.</p>
+</div>
+<div class="tour">
+<h3><strong>GLASGOW 16/11/19</strong></h3>
+<div class="row2">
+<img src="img/glasgow.jpg" class="tourimg" alt="image of the SWG3 studio warehouse glasgow"/>
+<p class="albumtext"> something has to change tour. SWG3 Studio Warehouse Glasgow, December 16th, 2019.</p>
+</div>
+<p>tickets no longer available.</p>
+</div>
+  <div class="tour">
+  <h3><strong>READING 24/08/19</strong></h3>
+  <div class="row2">
+  <img src="img/reading.jpg" class="tourimg" alt="image of reading festival 2019"/>
+  <p class="albumtext"> reading festival 2019. saturday 24th August. festival republic stage.</p>
+  </div>
+  <p>tickets no longer available.</p>
+  </div>
+
+  <button onclick="backtotop()" id="topbutton" class="topbutton" >back to top</button>
+  <footer><strong>P2584421<strong></footer>
+  <script type="text/javascript">
+    function openNav() {
+      document.getElementById("sidepanel").style.width = "250px";
+    }
+
+    /* Set the width of the sidebar to 0 (hide it) */
+    function closeNav() {
+      document.getElementById("sidepanel").style.width = "0";
+    }
+    mybutton = document.getElementById("topbutton")
+      window.onscroll = function() {buttonshow()};
+
+  function buttonshow() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+        mybutton.style.display = "none";
+        }
+      }
+
+      function backtotop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      function tourAlert() {
+        document.getElementById("alertfortour").style.display = "block";
+      };
+      function hidealert() {
+      document.getElementById("alertfortour").style.display = "none";
+    };
+  </script>
+  </body>
+</html>
