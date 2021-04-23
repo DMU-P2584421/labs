@@ -103,9 +103,9 @@ footer {
 body {
   background-image: url(../img/tjhbg.jpg);
   background-position: center;
-    background-attachment: fixed !important;
+    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-color: white;
+    background-color: purple;
 }
 @media (max-width: 800px) {
   body {
