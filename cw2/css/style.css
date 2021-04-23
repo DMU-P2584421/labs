@@ -103,7 +103,7 @@ footer {
 body {
   background-image: url(../img/tjhbg.jpg);
   background-position: center;
-    background-attachment: fixed;
+    background-attachment: fixed !important;
     background-repeat: no-repeat;
     background-color: white;
 }
