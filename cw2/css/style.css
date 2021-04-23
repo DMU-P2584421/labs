@@ -110,7 +110,7 @@ body {
 @media (max-width: 800px) {
   body {
     margin: 0;
-		background-attachment: scroll;
+	position: fixed;
 	}
 }
   
