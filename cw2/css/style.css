@@ -4,7 +4,6 @@
   padding: 5px;
   text-align: left;
   color: indigo;
-  height: 2s;
   line-height: 30px;
   text-shadow: -1px 1px 1px pink;
 }
@@ -145,7 +144,6 @@ body {
   text-align: center;
   font-family: arial;
   text-shadow: 1px 1px black;
-  float: center;
 }
 .button {
   background-color: purple;
