@@ -1,6 +1,6 @@
 .title {
   background-color: white;
-  font-family: arial;
+  font-family: arial; /* i chose the font arial because it is the websafe font that resembles the japanese house logo font the closest*/
   padding: 5px;
   text-align: left;
   color: indigo;
@@ -79,7 +79,7 @@ video{
   position: fixed;
   bottom: 15px;
   left: 20px;
-  z-index: 99;
+  z-index: 99; 
   background: rgba(165, 55, 253, 0.9);
   color: white;
   text-shadow: 1px 1px black;
@@ -99,6 +99,7 @@ footer {
   color: indigo;
   text-shadow: 1px 1px grey;
   }
+/* i decided to have the background be a fixed image as i really like the colours in the photo that i have and i thought that the purples in it would be good for a colour scheme, as well as the effect being visually pleasing */
 body {
   background-image: url(../img/tjhbg.jpg);
   background-position: center;
@@ -110,7 +111,7 @@ body {
   body {
     margin: 0;
     background-attachment: fixed;
-  }
+  } /* an attempt to fix the issue of the background attachment not working in safari */
   
 
 }
@@ -166,7 +167,7 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-image: linear-gradient(indigo, purple);
+  background-image: linear-gradient(indigo, purple); /* makes the background of the side panel a aesthetically pleasing gradient */
   overflow-x: hidden;
   padding-top: 60px;
   transition: 0.5s;
@@ -200,7 +201,7 @@ body {
   width: 25%;
   border: none;
   font-family: arial;
-  background-image: url(../img/menu.png);
+  background-image: url(../img/menu.png); /* created this image for the menu button because i thought it would look cool for the menu button to be formatted in the same way as the artists logo*/
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -265,7 +266,7 @@ margin: auto;
 }
 .row2 {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row-reverse; /*decided to make the row 2 div be row reverse for a patterned effect of the album cover and the text switching sides, as i believe it is more visually pleasing. the reason i did this instead of just changing the order of the elements in the html is because i thought it would be more confusin to look at and work with if i did that*/
   text-align: justify;
   align-items: center;
 }
