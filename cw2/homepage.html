@@ -4,7 +4,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css"> <!-- links the css stylesheet to the page-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8">
-     <meta name="description" content="the japanese house fan website homepage">
+     <meta name="description" content="the japanese house fan website homepage"> <!--meta description for if someone is searching for this sort of website, so that it would come up in searches-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--links thefont awesome stylesheet for the social media icons-->
     <title>home</title>
   </head>
@@ -19,29 +19,29 @@
   <a href="discography.html"><strong>DISCOGRAPHY</strong></a>
   <a href="live.html"><strong>LIVE DATES</strong></a>
 </div>
-
+<!-- aria-label has been used a lot throughout the code for accessability purposes-->
 <button class="openbtn" aria-label="button to open menu sidepanel" onclick="openNav()"></button> <!-- button to open the side panel -->
 </div>
 
 <div class="logo">
-   <img style='max-width: 100%' src="img/tjhlogo.png" alt="the japanese house logo">
+   <img style='max-width: 100%' src="img/tjhlogo.png" alt="the japanese house logo"> <!-- this image of the logo is a transparent png so that the background image shows through the logo, which i think is really visually pleasing-->
    </div>
    <h2><strong>ABOUT</strong></h2>
   <div class="about">
     <p>Amber Mary Bain (born 13 July 1995), better known by her stage name The Japanese House, is an English indie pop musician from Buckinghamshire. Bain contributes vocals and plays guitar, synthesizer and keyboard for her music. <p> As a teenager, Bain decided to pursue a career in music, having been taught music from her father during childhood. She began writing music under the moniker the Japanese House in 2012, after being introduced to Matt Healy of the 1975, who offered to help produce her music under the label Dirty Hit. </p> <p> She first rose to prominence after the release of her first single, "Still", which was a critical success and premiered on BBC Radio 1 presented by Zane Lowe.</p>
   </div>
-<div class="songquestion">
+<div class="songquestion"> <!-- i thought that including an interactive element in the website would make it more interesting to the user, as well allow me to implement a different sort of javascript function to those that are only included for convenience and website functionality, like the sidepanel menu and back to top button. this function is merely for fun ! -->
 <p><strong>What is your favourite song by The Japanese House?</strong></p>
 <form id="form" onsubmit="return false;" > <!-- the return false means that the form doesnt 'submit' so the page wont reload-->
   <input type="text" name="song" id="song">
-  <label for="song" aria-label="type your favourite the japanese house song"></label>
+  <label for="song" aria-label="type your favourite the japanese house song"></label> <!-- adds a label to the prompt box for accesability purposes-->
   <input type="submit" onclick="songfunction()" class="button" value="submit"> <!-- on click the function to decide and print the response to the answer will start -->
 </form>
 <div class="answer">
 <p id="answer"></p></div> <!-- the element that will become the response to the answer once it is printed-->
 </div>
 <div class="latest">
-  <h2><strong>LATEST RELEASES</strong></h2>
+  <h2><strong>LATEST RELEASES</strong></h2> <!-- this section was made to allow for audio and video to be implemented in the website in the form of the bands latest releases-->
 </div>
 <div class="vid">
 <h3><strong>Something Has To Change</strong></h3>
@@ -69,7 +69,7 @@
 </div>
 <div class="socials">
   <h2><strong>SOCIAL MEDIA</strong></h2>
-<div class="socialicons">
+<div class="socialicons"> <!-- this section uses social media icons from the website font awesome, and are accessed through and external stylesheet which is linked in the head. I thought this was a better option to provide links to social media than simple text links-->
    <a href="https://www.facebook.com/Japanesehouse" id="fb" class="fa fa-facebook"></a>
   <label for="fb" aria-label="link to the japanese house facebook account"></label>
   <a href="https://twitter.com/Japanesehouse?s=20" id="twt" class="fa fa-twitter"></a>
@@ -118,7 +118,7 @@ function songfunction() {
 } else {
   document.getElementById("answer").innerHTML = "I dont know that one, is it possible that you've typed it wrong?";
 }
-//this function above is to print a specific response depending on the users answer. the function is basically: if input is ab or a or b etc. etc. print one response, if the input is o or p or q etc. print a different response, if the input is t print another different response, and if the input is none of those than it is likely it is spelt wrong or not a valid answer, so the script will print a response accordingly. //
+//this function above is to print a specific response depending on the users answer. the function is basically: if input is the same as ab or a or b etc. etc. print one response, if the input is o or p or q etc. print a different response, if the input is t print another different response, and if the input is none of those than it is likely it is spelt wrong or not a valid answer, so the script will print a response accordingly. //
 }
 function openNav() {
   document.getElementById("sidepanel").style.width = "250px";
