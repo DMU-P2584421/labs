@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <title>live dates</title>
   </head>
-  <body onLoad="tourAlert()">
+  <body onLoad="tourAlert()"> <!-- this means that when the page is loaded, the tour alert function will run (a pop up) -->
     <div class="row">
     <div class="title">
   <h1><strong>THE JAPANESE HOUSE</strong></h1>
@@ -21,9 +21,9 @@
   <button aria-label="button to open menu sidepanel" class="openbtn" onclick="openNav()"></button>
     </div>
       <h1 class="pagetitle"><strong>LIVE DATES</strong></h1>
-<div id="alertfortour" class="popup">
+<div id="alertfortour" class="popup"> <!-- i decided to use javascript to add a pop up to this page as i thought it was an appropriate way to alert the user that there are no current or upcoming tour dates -->
         <div class="inside">
-          <button id="alertclosebutton" onclick="hidealert()" class="closeBtn">X</button>
+          <button id="alertclosebutton" onclick="hidealert()" class="closeBtn">X</button> <!-- this is to add a button to the pop up that will allow to user to close it-->
           <h1><strong>LIVE DATES ON HOLD</strong></h1>
           <p>
             all future uk live dates, festival apprearances, and international shows are on hold due to national lockdown.
@@ -91,10 +91,10 @@
         document.documentElement.scrollTop = 0;
       }
       function tourAlert() {
-        document.getElementById("alertfortour").style.display = "block";
+        document.getElementById("alertfortour").style.display = "block"; // simple javascript that means that when the touralert function is triggered by loading the page, the pop up will change from not being displayed, to being displayed //
       };
       function hidealert() {
-      document.getElementById("alertfortour").style.display = "none";
+      document.getElementById("alertfortour").style.display = "none"; // similar to the above function, changes the pop up to not being displayed when the exit button is clicked //
     };
   </script>
   </body>
