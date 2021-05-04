@@ -14,13 +14,13 @@
 <h1><strong>THE JAPANESE HOUSE</strong></h1>
 </div>
 <div id="sidepanel" class="sidepanel">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> <!-- button for when the sidepanel is open to close it -->
+  <a href="javascript:void(0)" class="closebtn" aria-label="button to close menu sidepanel" onclick="closeNav()">&times;</a> <!-- button for when the sidepanel is open to close it -->
 <a href="homepage.html"><strong>HOME</strong></a>
   <a href="discography.html"><strong>DISCOGRAPHY</strong></a>
   <a href="live.html"><strong>LIVE DATES</strong></a>
 </div>
 
-<button class="openbtn" onclick="openNav()"></button> <!-- button to open the side panel -->
+<button class="openbtn" aria-label:"button to open menu sidepanel" onclick="openNav()"></button> <!-- button to open the side panel -->
 </div>
 
 <div class="logo">
@@ -34,6 +34,7 @@
 <p><strong>What is your favourite song by The Japanese House?</strong></p>
 <form id="form" onsubmit="return false;" > <!-- the return false means that the form doesnt 'submit' so the page wont reload-->
   <input type="text" name="song" id="song">
+  <label for="song"> enter your favourite song by the japanese house </label>
   <input type="submit" onclick="songfunction()" class="button" value="submit"> <!-- on click the function to decide and print the response to the answer will start -->
 </form>
 <div class="answer">
@@ -69,10 +70,14 @@
 <div class="socials">
   <h2><strong>SOCIAL MEDIA</strong></h2>
 <div class="socialicons">
-   <a href="https://www.facebook.com/Japanesehouse" class="fa fa-facebook"></a>
-  <a href="https://twitter.com/Japanesehouse?s=20" class="fa fa-twitter"></a>
-  <a href="https://www.youtube.com/channel/UCrLuCLvpoujXvKP8FpkCIJQ" class="fa fa-youtube"></a>
-  <a href="https://www.instagram.com/thejapanesehouse/" class="fa fa-instagram"></a>
+   <a href="https://www.facebook.com/Japanesehouse" id="fb" class="fa fa-facebook"></a>
+  <label for="fb">link to the japanese house facebook account</label>
+  <a href="https://twitter.com/Japanesehouse?s=20" id="twt" class="fa fa-twitter"></a>
+  <label for="twt">link to the japanese house twitter account</label>
+  <a href="https://www.youtube.com/channel/UCrLuCLvpoujXvKP8FpkCIJQ" id="yt" class="fa fa-youtube"></a>
+  <label for="yt">link to the japanese house youtube account</label>
+  <a href="https://www.instagram.com/thejapanesehouse/" id="ig" class="fa fa-instagram"></a>
+  <label for="ig">link to the japanese house instagram account</label>
   </div>
 </div>
 <button onclick="backtotop()" id="topbutton" class="topbutton" >back to top</button> <!-- this button runs the function to take the user back to the top of the page. i added this so the user wouldnt have to scroll all the way back up to get to the menu, and i didnt want to make the menu and heading static to the top of the page becaus ei didnt like how it looked -->
